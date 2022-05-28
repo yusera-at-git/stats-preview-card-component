@@ -1,0 +1,131 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Lexend Deca", sans-serif;
+}
+.card {
+  position: relative;
+  margin: 5em 2em;
+  text-align: center;
+  overflow: hidden;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+.img-overlay {
+  background-color: hsla(277, 64%, 61%, 0.651);
+  height: 100%;
+}
+.img_header {
+  width: 100%;
+  height: 400px;
+  background: url("./images/image-header-mobile.jpg") no-repeat center/cover;
+}
+.card-content {
+  padding: 2em;
+}
+.card-title {
+  font-size: 1.7em;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+span {
+  font-size: 1em;
+  color: hsl(277, 64%, 61%);
+}
+.card-details {
+  margin: 0px 0.5em 2em;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.info {
+  margin: 1em;
+}
+.stat-no {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.7em;
+}
+.stat-of {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding: 0.6em;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 10%;
+    padding: 0;
+    justify-content: center;
+    text-align: left;
+    flex-direction: row-reverse;
+    height: 500px;
+  }
+  .card-content {
+    max-width: 50%;
+    padding: 8%;
+    padding-right: 10%;
+    margin: 0;
+  }
+  .card-title {
+    font-size: 2em;
+    margin: 0 0 1em;
+    padding: 0;
+  }
+  .img_header {
+    height: 500px;
+    max-width: 50%;
+    background: url("./images/image-header-desktop.jpg") no-repeat center/cover;
+  }
+  span {
+    font-size: 1em;
+    color: hsl(277, 64%, 61%);
+  }
+  .card-details {
+    margin: 0em;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  .info {
+    margin: 0.8em 0.8em 0.8em 0;
+  }
+  .more-info {
+    margin-top: 3em;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .stat-no {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  .stat-of {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 0.6em 0em;
+  }
+}
